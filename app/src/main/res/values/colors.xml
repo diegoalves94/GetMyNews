@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gmn_light_primary">#006689</color>
+    <color name="gmn_light_onPrimary">#FFFFFF</color>
+    <color name="gmn_light_primaryContainer">#C2E8FF</color>
+    <color name="gmn_light_onPrimaryContainer">#001E2C</color>
+    <color name="gmn_light_secondary">#4E616D</color>
+    <color name="gmn_light_onSecondary">#FFFFFF</color>
+    <color name="gmn_light_secondaryContainer">#D1E5F3</color>
+    <color name="gmn_light_onSecondaryContainer">#091E28</color>
+    <color name="gmn_light_tertiary">#00668A</color>
+    <color name="gmn_light_onTertiary">#FFFFFF</color>
+    <color name="gmn_light_tertiaryContainer">#C3E7FF</color>
+    <color name="gmn_light_onTertiaryContainer">#001E2C</color>
+    <color name="gmn_light_error">#BA1A1A</color>
+    <color name="gmn_light_errorContainer">#FFDAD6</color>
+    <color name="gmn_light_onError">#FFFFFF</color>
+    <color name="gmn_light_onErrorContainer">#410002</color>
+    <color name="gmn_light_background">#F8FDFF</color>
+    <color name="gmn_light_onBackground">#001F25</color>
+    <color name="gmn_light_surface">#F8FDFF</color>
+    <color name="gmn_light_onSurface">#001F25</color>
+    <color name="gmn_light_surfaceVariant">#DCE3E9</color>
+    <color name="gmn_light_onSurfaceVariant">#41484D</color>
+    <color name="gmn_light_outline">#71787D</color>
+
+    <color name="gmn_dark_primary">#78D1FF</color>
+    <color name="gmn_dark_onPrimary">#003549</color>
+    <color name="gmn_dark_primaryContainer">#004D68</color>
+    <color name="gmn_dark_onPrimaryContainer">#C2E8FF</color>
+    <color name="gmn_dark_secondary">#B5C9D7</color>
+    <color name="gmn_dark_onSecondary">#20333D</color>
+    <color name="gmn_dark_secondaryContainer">#364954</color>
+    <color name="gmn_dark_onSecondaryContainer">#D1E5F3</color>
+    <color name="gmn_dark_tertiary">#7BD0FF</color>
+    <color name="gmn_dark_onTertiary">#003549</color>
+    <color name="gmn_dark_tertiaryContainer">#004C69</color>
+    <color name="gmn_dark_onTertiaryContainer">#C3E7FF</color>
+    <color name="gmn_dark_error">#FFB4AB</color>
+    <color name="gmn_dark_errorContainer">#93000A</color>
+    <color name="gmn_dark_onError">#690005</color>
+    <color name="gmn_dark_onErrorContainer">#FFDAD6</color>
+    <color name="gmn_dark_background">#001F25</color>
+    <color name="gmn_dark_onBackground">#A6EEFF</color>
+    <color name="gmn_dark_surface">#001F25</color>
+    <color name="gmn_dark_onSurface">#A6EEFF</color>
+    <color name="gmn_dark_surfaceVariant">#41484D</color>
+    <color name="gmn_dark_onSurfaceVariant">#C0C7CD</color>
+    <color name="gmn_dark_outline">#8A9297</color>
+</resources>
+

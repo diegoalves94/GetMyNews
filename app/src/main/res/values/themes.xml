@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.GetMyNews" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/gmn_light_primary</item>
+        <item name="colorOnPrimary">@color/gmn_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/gmn_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/gmn_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/gmn_light_secondary</item>
+        <item name="colorOnSecondary">@color/gmn_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/gmn_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/gmn_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/gmn_light_tertiary</item>
+        <item name="colorOnTertiary">@color/gmn_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/gmn_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/gmn_light_onTertiaryContainer</item>
+    </style>
+</resources>
