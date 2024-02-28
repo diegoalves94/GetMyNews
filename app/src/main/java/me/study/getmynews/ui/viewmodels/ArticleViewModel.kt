@@ -14,7 +14,7 @@ import javax.inject.Inject
 @HiltViewModel
 class ArticleViewModel @Inject constructor(
     private var newsRepository: NewsRepository
-) : ViewModel(){
+) : ViewModel() {
 
     val articleLiveData: LiveData<Article?>
         get() = _articleLiveData
@@ -24,7 +24,7 @@ class ArticleViewModel @Inject constructor(
         get() = _appState
     private val _appState = MutableLiveData<DataState>()
 
-    fun setArticleData(id: Int){
+    fun setArticleData(id: Int) {
         _appState.postValue(DataState.LOADING)
 
         viewModelScope.launch {

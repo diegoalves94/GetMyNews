@@ -8,10 +8,10 @@ import javax.inject.Inject
 
 class NewsDataSourceImpl @Inject constructor(
     private var newsDao: NewsDao
-): NewsDataSource {
+) : NewsDataSource {
 
     override suspend fun getNewsData(): Result<List<Article>?> =
-        withContext(Dispatchers.IO){
+        withContext(Dispatchers.IO) {
             val resultLocal = loadLocalNewsData()
 
             return@withContext when {
@@ -31,7 +31,7 @@ class NewsDataSourceImpl @Inject constructor(
     private suspend fun loadLocalNewsData() = newsDao.getNews()
 
     override suspend fun getArticleData(articleId: Int): Result<Article?> =
-        withContext(Dispatchers.IO){
+        withContext(Dispatchers.IO) {
             return@withContext when (val resultLocal = loadLocalArticleData(articleId)) {
                 null -> Result.failure(Throwable())
                 else -> Result.success(resultLocal)

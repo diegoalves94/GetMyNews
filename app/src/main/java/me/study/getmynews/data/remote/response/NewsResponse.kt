@@ -7,5 +7,7 @@ import me.study.getmynews.data.local.entities.Article
 data class NewsResponse(
     val status: String?,
     val totalResults: Int?,
-    val articles: List<Article>?
+    val articles: List<Article>?,
+    val code: String? = null,
+    val message: String? = null
 )

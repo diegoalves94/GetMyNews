@@ -11,7 +11,7 @@ import me.study.getmynews.data.local.entities.Source
     version = 1,
     exportSchema = false
 )
-abstract class NewsDatabase: RoomDatabase() {
+abstract class NewsDatabase : RoomDatabase() {
 
     abstract fun getNewsDao(): NewsDao
 

@@ -12,6 +12,7 @@ fun ImageView.bindSrcUrl(
     url?.let {
         Glide.with(this)
             .load(url)
+            .centerCrop()
             .placeholder(R.drawable.placeholder)
             .into(this)
     }

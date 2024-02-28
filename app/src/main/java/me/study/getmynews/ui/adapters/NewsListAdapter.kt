@@ -12,7 +12,6 @@ class NewsListAdapter(
 ) : RecyclerView.Adapter<NewsListAdapter.ViewHolder>() {
     private val newsList: MutableList<Article> = ArrayList()
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         return ViewHolder(
@@ -55,53 +54,3 @@ class NewsListAdapter(
 interface OnNewsItemClickListener {
     fun onNewsSelected(position: Int)
 }
-
-//class MovieListAdapter(
-//    private val listener: OnMovieItemClickListener
-//) : RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
-//
-//    private val moviesList: MutableList<Movie> = ArrayList()
-//
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-//
-//        return ViewHolder(
-//            FragmentNewsItemBinding.inflate(
-//                LayoutInflater.from(parent.context),
-//                parent,
-//                false
-//            )
-//        )
-//    }
-//
-//    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        val movie = moviesList[position]
-//
-//        holder.bindItem(movie)
-//        holder.view.setOnClickListener {
-//            listener.onMovieSelected(position)
-//        }
-//        holder.shareIcon.setOnClickListener {
-//            listener.onShareClick(movie.id, position)
-//        }
-//    }
-//
-//    override fun getItemCount(): Int = moviesList.size
-//
-//    inner class ViewHolder(private val binding: FragmentMovieItemBinding) :
-//        RecyclerView.ViewHolder(binding.root) {
-//        val view: View = binding.root
-//        val shareIcon: ImageView = binding.ivShare
-//        fun bindItem(movie: Movie) {
-//            binding.movie = movie
-//            binding.executePendingBindings()
-//        }
-//    }
-//
-//    fun updateData(movieList: List<Movie>) {
-//        moviesList.clear()
-//        moviesList.addAll(movieList)
-//        notifyDataSetChanged()
-//    }
-//
-//}
-

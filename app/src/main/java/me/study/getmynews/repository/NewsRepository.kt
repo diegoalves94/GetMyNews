@@ -8,7 +8,7 @@ import javax.inject.Inject
 class NewsRepository @Inject constructor(
     private var newsDataSource: NewsDataSourceImpl,
     private var newsSourceRemote: NewsDataSourceRemoteImpl
-){
+) {
 
     suspend fun getNewsData(): Result<List<Article>?> {
         return try {
@@ -33,7 +33,7 @@ class NewsRepository @Inject constructor(
 
     private suspend fun getNewsLocal(): Result<List<Article>?> {
         val localResult = newsDataSource.getNewsData()
-        return when{
+        return when {
             localResult.isSuccess -> Result.success(localResult.getOrNull())
             else -> Result.failure(Throwable())
         }
@@ -42,9 +42,9 @@ class NewsRepository @Inject constructor(
     suspend fun getArticleData(articleId: Int): Result<Article?> {
         return try {
             val result = newsDataSource.getArticleData(articleId)
-            if(result.isSuccess){
+            if (result.isSuccess) {
                 result
-            }else{
+            } else {
                 Result.failure(Throwable())
             }
         } catch (e: Exception) {

@@ -19,26 +19,26 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(okHttpClient: OkHttpClient) : Retrofit = Retrofit.Builder()
+    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit = Retrofit.Builder()
         .client(okHttpClient)
         .baseUrl(Constants.NEWS_API_BASE_URL)
         .addConverterFactory(MoshiConverterFactory.create())
         .build()
 
     @Provides
-    fun provideNewsService(retrofit: Retrofit) : NewsService =
+    fun provideNewsService(retrofit: Retrofit): NewsService =
         retrofit.create(NewsService::class.java)
 
 
     @Provides
-    fun provideOkHttpClient(requestInterceptor: Interceptor) : OkHttpClient =
+    fun provideOkHttpClient(requestInterceptor: Interceptor): OkHttpClient =
         OkHttpClient.Builder()
             .addInterceptor(requestInterceptor)
             .connectTimeout(60, TimeUnit.SECONDS)
             .build()
 
     @Provides
-    fun provideRequestIntercepter() : Interceptor = Interceptor { chain ->
+    fun provideRequestIntercepter(): Interceptor = Interceptor { chain ->
         val url = chain.request()
             .url()
             .newBuilder()

@@ -14,7 +14,7 @@ import me.study.getmynews.databinding.FragmentArticleBinding
 import me.study.getmynews.ui.viewmodels.ArticleViewModel
 
 @AndroidEntryPoint
-class ArticleFragment: Fragment() {
+class ArticleFragment : Fragment() {
 
     private lateinit var binding: FragmentArticleBinding
 

@@ -4,10 +4,11 @@ import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.squareup.moshi.JsonClass
+import me.study.getmynews.utils.convertDateFormat
 
 @Entity
 @JsonClass(generateAdapter = true)
-data class Article (
+data class Article(
     @PrimaryKey(autoGenerate = true)
     val articleId: Int? = null,
     val author: String? = null,
@@ -19,4 +20,6 @@ data class Article (
     val content: String? = null,
     @Embedded
     val source: Source? = null
-)
+) {
+    fun getPublishedDate() = "Published at ${convertDateFormat(publishedAt)}"
+}
