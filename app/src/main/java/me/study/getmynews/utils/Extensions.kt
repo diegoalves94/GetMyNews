@@ -21,7 +21,7 @@ fun convertDateFormat(
     val outputFormat = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
 
     return try {
-        val date: Date = inputFormat.parse(inputDateTime)
+        val date: Date = inputFormat.parse(inputDateTime!!)!!
         outputFormat.format(date)
     } catch (e: ParseException) {
         e.printStackTrace()

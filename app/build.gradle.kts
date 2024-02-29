@@ -116,12 +116,12 @@ dependencies {
 
     // Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.50")
+    implementation("androidx.hilt:hilt-navigation:1.2.0")
+    implementation("androidx.hilt:hilt-navigation-fragment:1.2.0")
     ksp("com.google.dagger:hilt-compiler:2.50")
 
     //Hilt - Unit Tests
     testImplementation("com.google.dagger:hilt-android-testing:2.50")
-    implementation("androidx.hilt:hilt-navigation:1.2.0")
-    implementation("androidx.hilt:hilt-navigation-fragment:1.2.0")
     kspTest("com.google.dagger:hilt-compiler:2.50")
 
     //Testing
@@ -129,6 +129,8 @@ dependencies {
     testImplementation("com.google.truth:truth:1.1.3")
     testImplementation("io.mockk:mockk:1.12.4")
     testImplementation("io.mockk:mockk-common:1.12.4")
+    implementation("androidx.test.ext:junit-ktx:1.1.5")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
