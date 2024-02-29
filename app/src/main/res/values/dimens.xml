@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_margin">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="image_200">200dp</dimen>
+    <dimen name="image_250">250dp</dimen>
 
     <dimen name="text_size_title">24sp</dimen>
     <dimen name="text_size_subtitle">14sp</dimen>
     <dimen name="text_size_content">16sp</dimen>
+    <dimen name="text_size_label">10sp</dimen>
 </resources>

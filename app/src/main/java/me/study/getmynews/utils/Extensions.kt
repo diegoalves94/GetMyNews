@@ -17,11 +17,15 @@ fun Fragment.setToolbarTitle(title: String) {
 fun convertDateFormat(
     inputDateTime: String?
 ): String {
-    val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", Locale.getDefault())
+    val inputFormat: SimpleDateFormat = if (Constants.NEWS_API_NEWS_SOURCE == "techcrunch") {
+        SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.getDefault())
+    } else {
+        SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", Locale.getDefault())
+    }
     val outputFormat = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
 
     return try {
-        val date: Date = inputFormat.parse(inputDateTime!!)!!
+        val date: Date = inputFormat.parse(inputDateTime)
         outputFormat.format(date)
     } catch (e: ParseException) {
         e.printStackTrace()

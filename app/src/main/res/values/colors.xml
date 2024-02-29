@@ -19,7 +19,7 @@
     <color name="gmn_light_background">#F8FDFF</color>
     <color name="gmn_light_onBackground">#001F25</color>
     <color name="gmn_light_surface">#F8FDFF</color>
-    <color name="gmn_light_onSurface">#001F25</color>
+    <color name="gmn_light_onSurface">#2B2B2B</color>
     <color name="gmn_light_surfaceVariant">#DCE3E9</color>
     <color name="gmn_light_onSurfaceVariant">#41484D</color>
     <color name="gmn_light_outline">#71787D</color>
@@ -43,7 +43,7 @@
     <color name="gmn_dark_background">#001F25</color>
     <color name="gmn_dark_onBackground">#A6EEFF</color>
     <color name="gmn_dark_surface">#001F25</color>
-    <color name="gmn_dark_onSurface">#A6EEFF</color>
+    <color name="gmn_dark_onSurface">#FFFFFF</color>
     <color name="gmn_dark_surfaceVariant">#41484D</color>
     <color name="gmn_dark_onSurfaceVariant">#C0C7CD</color>
     <color name="gmn_dark_outline">#8A9297</color>

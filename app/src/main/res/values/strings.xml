@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GetMyNews</string>
 
-    <string name="message_error">Erro!\nPor favor, tente novamente.</string>
+    <string name="message_error">Error!\nPlease, try again later!</string>
 
+    <string name="cd_news_banner">news banner</string>
 </resources>

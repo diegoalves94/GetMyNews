@@ -28,8 +28,9 @@
             <ImageView
                 android:id="@+id/iv_article_banner"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginBottom="32dp"
+                android:layout_height="@dimen/image_250"
+                android:layout_marginBottom="@dimen/margin_32"
+                android:contentDescription="@string/cd_news_banner"
                 app:layout_constraintBottom_toTopOf="@+id/tv_article_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -38,14 +39,13 @@
 
             <TextView
                 android:id="@+id/tv_article_title"
+                style="@style/Theme.GetMyNews.Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
                 android:text="@{articleViewModel.articleLiveData.title}"
-                android:textSize="@dimen/text_size_title"
-                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -53,12 +53,12 @@
 
             <TextView
                 android:id="@+id/tv_published_at"
+                style="@style/Theme.GetMyNews.Subtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:textSize="@dimen/text_size_subtitle"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_16"
                 android:text="@{articleViewModel.articleLiveData.publishedDate}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -66,14 +66,14 @@
 
             <TextView
                 android:id="@+id/tv_article_content"
+                style="@style/Theme.GetMyNews.Content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="32dp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_32"
                 android:text="@{articleViewModel.articleLiveData.content}"
-                android:textSize="@dimen/text_size_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cl_movie"
+                android:id="@+id/cl_news"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="@color/gmn_light_background"
@@ -92,7 +92,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ProgressBar
-                    android:id="@+id/progressBarMovies"
+                    android:id="@+id/progressBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:indeterminate="true"
@@ -103,14 +103,13 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/tv_error_movies"
+                    android:id="@+id/tv_error"
+                    style="@style/Theme.GetMyNews.Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/message_error"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
                     android:visibility="@{articleViewModel.appState == DataState.ERROR ? View.VISIBLE : View.GONE}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
