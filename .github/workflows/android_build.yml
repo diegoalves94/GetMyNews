@@ -10,12 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: "Set Up JDK"
+      - name: Set Up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 17
+          java-version: '17'
 
-      - name: "Run Tests"
+      - name: Run Tests
         run: ./gradlew test
 
       - name: "Build Project
