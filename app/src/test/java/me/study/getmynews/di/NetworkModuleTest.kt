@@ -45,7 +45,7 @@ class NetworkModuleTest {
 
         // Then
         assertThat(okHttpClient.connectTimeoutMillis()).isEqualTo(TimeUnit.MINUTES.toMillis(1))
-        assertThat(okHttpClient.interceptors().size).isEqualTo(2)
+        assertThat(okHttpClient.interceptors().size).isEqualTo(1)
     }
 
 
